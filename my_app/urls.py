@@ -3,7 +3,7 @@ from my_app.views import detail_view,blog_view
 
 urlpatterns = [
 
-path('detail/<slug>',detail_view,name = 'detail'),
-path('blog/',blog_view,name = 'blog'),
 
+path('blog/',blog_view,name = 'blog'),
+path('detail/<slug>/',detail_view,name = 'detail'),
 ]
